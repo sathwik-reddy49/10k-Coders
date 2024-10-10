@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Role Application</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Form Application</legend>
+        <center>
+            <h1>Form Application for Developer Role</h1>
+            <form action="./Regular Usage files/thankyou.html" method="POST">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name here" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email here" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password here" maxlength="15" minlength="8" required><br><br>
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" maxlength="15" minlength="8" required><br><br>
+                Make sure you submit the same password in both fields. <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="60" placeholder="Enter your age" required><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br><br>
+
+                From: <input type="date" name="from_date" required><br><br>
+                To: <input type="date" name="to_date" required><br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+                <label for="technology">Technology Preference:</label>
+                <select id="technology" name="technology" required>
+                    <option value="">--Select Technology--</option>
+                    <option value="web">Web Development</option>
+                    <option value="mobile">Mobile Development</option>
+                    <option value="data_science">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="cloud">Cloud Computing</option>
+                    <option value="devops">DevOps</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                </select><br><br>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments"></textarea><br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="./Regular Usage files/t@c.html">terms and conditions</a> and <a href="./Regular Usage files/pp.html">privacy policy</a>.</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </center>
+    </fieldset>
+</body>
+</html>
